@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Arrays</h2>
+<button onclick="MyFunc()" name="button">for array elements click here:</button>
+<p id="demo"></p>
+
+<script>
+let arr=new Array(10);
+for(let i=0;i<10;i++){
+let inp=prompt("Enter the element at "+i+":");
+number=parseFloat(inp);
+if(!isNaN(number)){
+arr[i]=number;
+}
+}
+function MyFunc(){
+document.getElementById("demo").innerHTML=arr;
+}
+</script>
+</body>
+</html>
